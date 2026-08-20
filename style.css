@@ -1,0 +1,110 @@
+<style>
+    
+body {
+        margin: 0;
+        padding: 40px 20px;
+        background-color: #DCCFC0;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        color: #4a3f35;
+    }
+
+    h2 {
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #6b5847;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #d8cbb8;
+        width: 60%;
+        margin: 20px auto 40px;
+    }
+
+    .title-center { text-align: center; }
+
+    .section-title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.3rem;
+        color: #0A2947;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    .card {
+        max-width: 900px;
+        margin: 0 auto 40px;
+        padding: 30px;
+        background-color: #B0BA99;
+        border: 1px solid #e3d8c8;
+        border-radius: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card img {
+        border-radius: 6px;
+        border: 1px solid #e0d4c3;
+        object-fit: cover;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card img:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 14px rgba;
+    }
+
+    .media-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .media-item .song-title {
+        font-weight: 700;
+        font-size: 1rem;
+        color: #4a3f35;
+        margin: 10px 0 2px;
+    }
+
+    .media-item .song-artist {
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: #8a7360;
+        margin: 0 0 8px;
+    }
+
+    .media-item .video-title {
+        font-weight: 700;
+        font-size: 1rem;
+        color: #4a3f35;
+        margin: 10px 0 8px;
+    }
+
+    .card audio,
+    .card video {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 6px;
+        outline: none;
+    }
+
+    .card audio {
+        accent-color: #8a7360;
+        background-color: #f0e7da;
+        border: 1px solid #e0d4c3;
+        padding: 4px;
+    }
+
+    .card video {
+        border: 3px solid #778873;
+        background-color: #ece2d3;
+    }
+  </style>
+</head>

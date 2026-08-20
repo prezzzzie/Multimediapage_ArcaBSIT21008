@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>My Multi-media Page</title>
+  <style>
+    
+
+    body {
+        margin: 0;
+        padding: 40px 20px;
+        background-color: #DCCFC0;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        color: #4a3f35;
+    }
+
+    h2 {
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #6b5847;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #d8cbb8;
+        width: 60%;
+        margin: 20px auto 40px;
+    }
+
+    .title-center { text-align: center; }
+
+    .section-title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.3rem;
+        color: #0A2947;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    .card {
+        max-width: 900px;
+        margin: 0 auto 40px;
+        padding: 30px;
+        background-color: #B0BA99;
+        border: 1px solid #e3d8c8;
+        border-radius: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card img {
+        border-radius: 6px;
+        border: 1px solid #e0d4c3;
+        object-fit: cover;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card img:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 14px rgba;
+    }
+
+    .media-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .media-item .song-title {
+        font-weight: 700;
+        font-size: 1rem;
+        color: #4a3f35;
+        margin: 10px 0 2px;
+    }
+
+    .media-item .song-artist {
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: #8a7360;
+        margin: 0 0 8px;
+    }
+
+    .media-item .video-title {
+        font-weight: 700;
+        font-size: 1rem;
+        color: #4a3f35;
+        margin: 10px 0 8px;
+    }
+
+    .card audio,
+    .card video {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 6px;
+        outline: none;
+    }
+
+    .card audio {
+        accent-color: #8a7360;
+        background-color: #f0e7da;
+        border: 1px solid #e0d4c3;
+        padding: 4px;
+    }
+
+    .card video {
+        border: 3px solid #778873;
+        background-color: #ece2d3;
+    }
+  </style>
+</head>
+<body>
+    <h2 class="title-center">My Multi-media Page</h2>
+    <hr>
+
+    <p class="section-title">My Favorite Photos</p>
+    <div class="card">
+        <img src="anchor.jpg" alt="Anchor" height="135" width="150">
+        <img src="babyAnchor.jpg" alt="Baby Anchor" height="135" width="150">
+        <img src="cutecat.jpg" alt="Cutie Anchor" height="135" width="150">
+        <img src="MyCat.jpg" alt="My Cat" height="135" width="150">
+        <img src="bigAnchor.jpg" alt="Big Anchor" height="135" width="150">
+    </div>
+
+    <p class="section-title">Most Played Music</p>
+    <div class="card">
+        <div class="media-item">
+            <p class="song-title">Dont Know Why</p>
+            <p class="song-artist">Norah Jones</p>
+            <audio controls>
+                <source src="Norah Jones -Dont Know Why.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="media-item">
+            <p class="song-title">Vienna</p>
+            <p class="song-artist">Billy Joel</p>
+            <audio controls>
+                <source src="Billy Joel - Vienna.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="media-item">
+            <p class="song-title">I Can't Handle Change</p>
+            <p class="song-artist">Roar</p>
+            <audio controls>
+                <source src="Roar - I Can’t Handle Change.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="media-item">
+            <p class="song-title">The Adults Are Talking</p>
+            <p class="song-artist">The Strokes</p>
+            <audio controls>
+                <source src ="The Strokes - The Adults Are Talking.mp3 " type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="media-item">
+            <p class="song-title">Holding On To You</p>
+            <p class="song-artist">Twenty One Pilots</p>
+            <audio controls>
+                <source src="21Pilots- Holding On To You.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <p class="section-title">Videos</p>
+    <div class="card">
+        <div class="media-item">
+            <p class="video-title">Bicol</p>
+            <video src="Bicol. mp4.mp4" height="150" width="100" preload="none" controls playsinline></video>
+        </div>
+
+        <div class="media-item">
+            <p class="video-title">boracay</p>
+            <video src="boracay. mp4.mp4" height="150" width="100" preload="none" autoplay muted controls playsinline></video>
+        </div>
+
+        <div class="media-item">
+            <p class="video-title">cebu</p>
+            <video src="cebu. mp4.mp4" height="150" width="100" preload="none" autoplay muted controls playsinline></video>
+        </div>
+
+        <div class="media-item">
+            <p class="video-title">palawan</p>
+            <video src="palawan. mp4.mp4" height="150" width="100" preload="none" autoplay muted controls playsinline></video>
+        </div>
+
+        <div class="media-item">
+            <p class="video-title">bohol</p>
+            <video src="bohol. mp4.mp4" height="150" width="100" preload="none" autoplay muted controls playsinline></video>
+        </div>
+    </div>
+
+</body>
+</html>
